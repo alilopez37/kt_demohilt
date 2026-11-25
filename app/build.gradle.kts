@@ -8,9 +8,7 @@ plugins {
 
 android {
     namespace = "com.upchiapas.kt_demohilt"
-    compileSdk {
-        version = release(37)
-    }
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.upchiapas.kt_demohilt"
@@ -53,6 +51,7 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
 
     implementation(libs.androidx.compose.ui.text.google.fonts)      // G Fonts
     implementation(libs.androidx.lifecycle.viewmodel.compose)       // viewModel()
